@@ -12,6 +12,9 @@ namespace Plugin
     extern int hMenuDisasm;
     extern int hMenuDump;
     extern int hMenuStack;
+    extern int hMenuGraph;
+    extern int hMenuMemmap;
+    extern int hMenuSymmod;
 } //Plugin
 
 #endif //_PLUGINMAIN_H
