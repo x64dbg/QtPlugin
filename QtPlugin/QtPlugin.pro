@@ -17,9 +17,11 @@ CONFIG(debug, debug|release) {
 !contains(QMAKE_HOST.arch, x86_64) {
     X64_BIN_DIR = ../bin/x32$${DIR_SUFFIX}         # Relative BIN path, 32-bit
     X64_GEN_DIR = ../gui_build/out32$${DIR_SUFFIX} # QMake temporary generated files, placed inside the build folder. (OBJ, UI, MOC)
+    QMAKE_EXTENSION_SHLIB = dp32
 } else {
     X64_BIN_DIR = ../bin/x64$${DIR_SUFFIX}         # Relative BIN path, 64-bit
     X64_GEN_DIR = ../gui_build/out64$${DIR_SUFFIX} # QMake temporary generated files, placed inside the build folder. (OBJ, UI, MOC)
+    QMAKE_EXTENSION_SHLIB = dp64
 }
 
 ##
